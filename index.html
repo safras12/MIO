@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pricing Plans</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: "Raleway", sans-serif;
+      font-family: "Zen Kaku Gothic Antique", sans-serif;
+    }
+    body {
+      margin: 10px 0;
+      min-height: 100vh;
+      background-image: linear-gradient(135deg, #f97794 10%, #623aa2 100%);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .panel {
+      background-color: white;
+      border-radius: 20px;
+      padding: 10px;
+      width: 90%;
+      max-width: 930px;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+    }
+    .pricing-plan {
+      border-bottom: 1px solid #e6e6e6;
+      padding: 0 20px;
+    }
+    .pricing-plan:last-child {
+      border-bottom: none;
+    }
+    .pricing-img {
+      width: 200px;
+    }
+    .pricing-header {
+      color: #888;
+      font-weight: 600;
+      letter-spacing: 1px;
+      font-size: medium;
+    }
+    .pricing-features {
+      margin: 30px 0 25px;
+      color: #f97794;
+    }
+    .pricing-features-items {
+      list-style: none;
+      font-weight: 600;
+      letter-spacing: 1px;
+      font-size: 13px;
+      line-height: 1.5;
+      padding: 10px 0;
+      border-top: 1px solid #e6e6e6;
+    }
+    .pricing-features-items:last-child {
+      border-bottom: 1px solid #e6e6e6;
+    }
+    .pricing-price {
+      color: #3acad1;
+      display: block;
+      font-size: 30px;
+      font-weight: 900;
+    }
+    .pricing-button {
+      color: #3acad1;
+      border: 1px solid #3acad1;
+      border-radius: 10px;
+      font-weight: 700;
+      display: inline-block;
+      padding: 15px 30px;
+      text-decoration: none;
+      margin: 15px 0;
+      width: 150px;
+      transition: background-color 200ms ease-in-out;
+    }
+    .pricing-button:hover,
+    .pricing-button:focus {
+      background-color: #43dee62c;
+    }
+    .pricing-button.is-featured {
+      background-color: #3acad1;
+      color: white;
+    }
+    .pricing-button.pricing-button.is-featured:hover,
+    .pricing-button.pricing-button.is-featured:focus {
+      background-color: #31b4bb;
+    }
+    @media (min-width: 800px) {
+      body {
+        margin: 0;
+      }
+      .panel {
+        flex-direction: row;
+      }
+      .pricing-plan {
+        border-bottom: none;
+        border-right: 1px solid #e6e6e6;
+        width: 33.33%;
+      }
+      .pricing-plan:last-child {
+        border-right: none;
+      }
+      #content1::after {
+        content: "\a";
+        white-space: pre;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="panel">
+     <div class="pricing-plan">
+      <a href="https://imgbb.com/"><img src="https://i.ibb.co/1m0fyMF/Personal.png" alt="Personal" border="0" class="pricing-img"></a>
+      <h2 class="pricing-header">PERSONAL</h2>
+       <ul class="pricing-features">
+         <li class="pricing-features-items">CUSTOM DOMAINS</li>
+         <li class="pricing-features-items">SLEEPS AFTER 30 MINS OF INACTIVITY</li>
+       </ul>
+       <span class="pricing-price">FREE</span>
+       <a href="#" class="pricing-button">SIGN-UP</a>
+     </div>
+     
+     <div class="pricing-plan">
+      <a href="https://imgbb.com/"><img src="https://i.ibb.co/J2dsNN0/Small-Business.png" alt="Small-Business" border="0" class="pricing-img"></a>
+      <h2 class="pricing-header">SMALL TEAM</h2>
+      <ul class="pricing-features">
+        <li class="pricing-features-items">NEVER SLEEPS</li>
+        <li class="pricing-features-items">MULTIPLE WORKERS FOR MORE POWERFUL APPS</li>
+      </ul>
+      <span class="pricing-price">&#8377;199</span>
+      <a href="#" class="pricing-button is-featured">FREE&nbsp;TRIAL</a>
+    </div>
+
+    <div class="pricing-plan">
+      <a href="https://imgbb.com/"><img src="https://i.ibb.co/8gLBQWR/Enterprise.png" alt="Enterprise" border="0" class="pricing-img"></a>
+      <h2 class="pricing-header">ENTERPRISE</h2>
+      <ul class="pricing-features">
+        <li class="pricing-features-items">DEDICATED</li>
+        <li class="pricing-features-items"><span id="content1">SIMPLE HORIZONTAL</span><span id="content2"> SCALABILITY</span></li>
+      </ul>
+      <span class="pricing-price">&#8377;399</span>
+      <a href="#" class="pricing-button">FREE&nbsp;TRIAL</a>
+    </div>
+  </div>
+</body>
+</html>
